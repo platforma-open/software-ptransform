@@ -10,3 +10,5 @@ log/
 *.idea
 *.tgz
 *.tar.gz
+*.pyc
+

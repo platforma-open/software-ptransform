@@ -1,13 +1,16 @@
 {
   "name": "@platforma-open/milaboratories.software-paggregate",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "scripts": {
     "build": "pl-pkg build",
     "prepublishOnly": "pl-pkg publish packages",
-    "do-pack": "rm -f *.tgz && pnpm pack && mv *.tgz package.tgz",
+    "do-pack": "rm -f *.tgz && pl-pkg build && pnpm pack && mv platforma-open*.tgz package.tgz",
     "changeset": "changeset",
     "version-packages": "changeset version"
   },
+  "files": [
+    "./dist/**/*"
+  ],
   "dependencies": {},
   "devDependencies": {
     "@changesets/cli": "^2.27.10",
