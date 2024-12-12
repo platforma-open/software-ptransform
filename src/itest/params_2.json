@@ -1,0 +1,22 @@
+{
+  "steps": [
+    {
+      "type": "aggregate",
+      "groupBy": [
+        "k1"
+      ],
+      "aggregations": [
+        {
+          "type": "sum",
+          "dst": "v1_sum",
+          "src": "v1"
+        },
+        {
+          "type": "first",
+          "dst": "v1_first",
+          "src": "v1"
+        }
+      ]
+    }
+  ]
+}
