@@ -4,7 +4,9 @@
   "scripts": {
     "build": "pl-pkg build",
     "prepublishOnly": "pl-pkg publish packages",
-    "do-pack": "rm -f *.tgz && pnpm pack && mv *.tgz package.tgz"
+    "do-pack": "rm -f *.tgz && pnpm pack && mv *.tgz package.tgz",
+    "changeset": "changeset",
+    "version-packages": "changeset version"
   },
   "dependencies": {},
   "devDependencies": {
