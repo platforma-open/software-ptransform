@@ -48,10 +48,15 @@ class AggregateMulti(WorkflowStepBase, tag="aggregate_multi"):
 
     def apply(self, data: pd.DataFrame) -> pd.DataFrame:
         results = data.copy()
-        g = data.groupby(self.group_by)
-        for agg in self.aggregations:
-            results[agg.dst] = agg.aggregate(g)
-        return results
+        if len(data) == 0:
+            for agg in self.aggregations:
+                results[agg.dst] = []
+            return results
+        else:
+            g = data.groupby(self.group_by)
+            for agg in self.aggregations:
+                results[agg.dst] = agg.aggregate(g)
+            return results
 
 
 class ColumnAggregationBase(AggregationBase):
