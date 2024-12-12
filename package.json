@@ -4,10 +4,13 @@
   "scripts": {
     "build": "pl-pkg build",
     "prepublishOnly": "pl-pkg publish packages",
-    "do-pack": "rm -f *.tgz && pnpm pack && mv *.tgz package.tgz"
+    "do-pack": "rm -f *.tgz && pnpm pack && mv *.tgz package.tgz",
+    "changeset": "changeset",
+    "version-packages": "changeset version"
   },
   "dependencies": {},
   "devDependencies": {
+    "@changesets/cli": "^2.27.10",
     "@platforma-sdk/package-builder": "^2.12.0",
     "@platforma-open/milaboratories.runenv-python-3": "^1.1.4"
   },
