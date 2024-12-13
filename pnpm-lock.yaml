@@ -12,8 +12,8 @@ importers:
         specifier: ^2.27.10
         version: 2.27.10
       '@platforma-open/milaboratories.runenv-python-3':
-        specifier: ^1.1.4
-        version: 1.1.4
+        specifier: ^1.1.5
+        version: 1.1.5
       '@platforma-sdk/package-builder':
         specifier: ^2.12.0
         version: 2.12.0
@@ -289,8 +289,8 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
-  '@platforma-open/milaboratories.runenv-python-3@1.1.4':
-    resolution: {integrity: sha512-tz8zCoWMuVP0WwoSxYov7caqFxSZF7qCPRBqe62rYZjXsRZ4LEiSf3BZJzue1s+rEOsO+zPJJXtfCQcmUYa3zQ==}
+  '@platforma-open/milaboratories.runenv-python-3@1.1.5':
+    resolution: {integrity: sha512-YFB6zC0cJCHVZw91ysLu0E9UDViPTCVWYmjWtxt1dsvud/zhjge4/iKv7gWIrltfmY6LahXeTehG2/bXnxEoUQ==}
 
   '@platforma-sdk/package-builder@2.12.0':
     resolution: {integrity: sha512-ct1oIVy05WKtXl29zILhs3OB0otv4mvLaIeRDds/2obT2PthQHQ0n0Y5LUI3PLUIuw6KpVbHwKjNfZxVy4t5DQ==}
@@ -1881,7 +1881,7 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
-  '@platforma-open/milaboratories.runenv-python-3@1.1.4': {}
+  '@platforma-open/milaboratories.runenv-python-3@1.1.5': {}
 
   '@platforma-sdk/package-builder@2.12.0':
     dependencies:
