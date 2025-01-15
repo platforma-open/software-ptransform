@@ -1,0 +1,16 @@
+{
+  "steps": [
+    {
+      "type": "aggregate",
+      "groupBy": [
+        "k1"
+      ],
+      "aggregations": [
+        {
+          "type": "max_by",
+          "rankingCol": "v1"
+        }
+      ]
+    }
+  ]
+}
