@@ -1,5 +1,4 @@
 from abc import abstractmethod
-from collections.abc import Collection
 from typing import Union, cast
 
 import msgspec
@@ -78,7 +77,7 @@ class FilterNot(FilterBase, tag="not"):
 
 
 class FilterAnd(FilterBase, tag="and"):
-    operands: Collection[AnyFilter]
+    operands: list[AnyFilter]
 
     def filter(self, table: pd.DataFrame) -> pd.Series:
         result: pd.Series | None = None
@@ -93,7 +92,7 @@ class FilterAnd(FilterBase, tag="and"):
 
 
 class FilterOr(FilterBase, tag="or"):
-    operands: Collection[AnyFilter]
+    operands: list[AnyFilter]
 
     def filter(self, table: pd.DataFrame) -> pd.Series:
         result: pd.Series | None = None

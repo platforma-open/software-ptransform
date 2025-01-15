@@ -6,8 +6,9 @@ import pandas as pd
 
 from aggregate import Aggregate, AggregateMulti
 from filter import Filter
+from transform import AnyTransformation
 
-type AnyWorkflowStep = Union[Filter, Aggregate, AggregateMulti]
+type AnyWorkflowStep = Union[Filter, Aggregate, AggregateMulti, AnyTransformation]
 
 
 class Workflow(msgspec.Struct):
