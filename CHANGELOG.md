@@ -1,5 +1,11 @@
 # @platforma-open/milaboratories.software-paggregate
 
+## 1.1.1
+
+### Patch Changes
+
+- 1e3259c: Added "count" aggregation
+
 ## 1.1.0
 
 ### Minor Changes
