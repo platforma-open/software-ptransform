@@ -16,6 +16,7 @@ class AggregationBase(msgspec.Struct, tag_field="type", rename="camel"):
 
 
 type AnyAggregation = Union[
+    AggregationCount,
     AggregationMax, AggregationMin, AggregationMean, AggregationMedian, AggregationSum, AggregationFirst,
     AggregationMaxBy]
 
@@ -121,6 +122,11 @@ class AggregationSum(ColumnAggregationBase, tag="sum"):
 class AggregationFirst(ColumnAggregationBase, tag="first"):
     def _aggregate_column(self, grp_data: DataFrameGroupBy, data: pd.DataFrame) -> pd.Series:
         return self._column_data(grp_data).first()
+
+
+class AggregationCount(ColumnAggregationBase, tag="count"):
+    def _aggregate_column(self, grp_data: DataFrameGroupBy, data: pd.DataFrame) -> pd.Series:
+        return self._column_data(grp_data).count()
 
 
 class MultiAggregationCumsum(ColumnAggregationBase, tag="cumsum"):

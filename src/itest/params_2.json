@@ -15,6 +15,11 @@
           "type": "first",
           "dst": "v1_first",
           "src": "v1"
+        },
+        {
+          "type": "count",
+          "dst": "v1_count",
+          "src": "v1"
         }
       ]
     }
