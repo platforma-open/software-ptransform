@@ -15,7 +15,8 @@ class Filter(WorkflowStepBase, tag="filter"):
     predicate: AnyFilter
 
     def apply(self, data: pd.DataFrame) -> pd.DataFrame:
-        pass
+        mask = self.predicate.filter(data)
+        return data[mask]
 
 
 class FilterBase(msgspec.Struct, tag_field="type", rename="camel"):

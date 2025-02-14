@@ -1,0 +1,11 @@
+{ "steps": [
+    {
+        "type": "filter",
+        "predicate": {
+            "type": "gt",
+            "value": 4,
+            "column": "i1"
+            }
+        }
+    ]
+}
