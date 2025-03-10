@@ -10,12 +10,13 @@ from workflow import Workflow
 parser = argparse.ArgumentParser(
     description="Performs input table transformation according to the JSON workflow")
 parser.add_argument("-w", "--workflow", help="workflow")
-parser.add_argument("input", help="input tsv file")
+parser.add_argument("input", nargs="+", help="input tsv file")
 parser.add_argument("output", help="output tsv file")
 
 args = parser.parse_args()
 
-data = pd.read_csv(args.input, sep='\t')
+datas = [pd.read_csv(i, sep='\t') for i in args.input]
+data = pd.concat(datas)
 with open(args.workflow, "rb") as f:
     workflow = msgspec.json.decode(f.read(), type=Workflow)
 result = workflow.apply(data)
