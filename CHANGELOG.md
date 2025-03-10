@@ -1,5 +1,17 @@
 # @platforma-open/milaboratories.software-paggregate
 
+## 1.2.0
+
+### Minor Changes
+
+- a0e3a18: apply method in Filter completed
+
+## 1.1.1
+
+### Patch Changes
+
+- 1e3259c: Added "count" aggregation
+
 ## 1.1.0
 
 ### Minor Changes
