@@ -1,5 +1,11 @@
 # @platforma-open/milaboratories.software-paggregate
 
+## 1.3.0
+
+### Minor Changes
+
+- 3660604: support for multiple files, internally concatenated into a single frame
+
 ## 1.2.0
 
 ### Minor Changes
