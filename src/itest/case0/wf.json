@@ -1,0 +1,38 @@
+{
+  "steps": [
+    {
+      "aggregations": [
+        {
+          "pickCols": [
+            [
+              "bestVHit",
+              "bestVHit"
+            ],
+            [
+              "bestVGene",
+              "bestVGene"
+            ],
+            [
+              "bestDHit",
+              "bestDHit"
+            ],
+            [
+              "bestDGene",
+              "bestDGene"
+            ],
+            [
+              "bestJHit",
+              "bestJHit"
+            ]
+          ],
+          "rankingCol": "uniqueMoleculeFraction",
+          "type": "max_by"
+        }
+      ],
+      "groupBy": [
+        "clonotypeKey"
+      ],
+      "type": "aggregate"
+    }
+  ]
+}
