@@ -1,0 +1,9 @@
+{
+  "steps": [
+    {
+      "type": "combine_columns_as_json",
+      "src": [ "k1", "v1" ],
+      "dst": "key1"
+    }
+  ]
+}

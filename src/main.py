@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+import csv
 
 import msgspec.json
 import pandas as pd
@@ -16,8 +17,8 @@ parser.add_argument("output", help="output tsv file")
 args = parser.parse_args()
 
 datas = [pd.read_csv(i, sep='\t') for i in args.input]
-data = pd.concat(datas)
+data = pd.concat(datas, ignore_index=True)
 with open(args.workflow, "rb") as f:
     workflow = msgspec.json.decode(f.read(), type=Workflow)
 result = workflow.apply(data)
-result.to_csv(args.output, sep='\t', index=False)
+result.to_csv(args.output, sep='\t', index=False, quoting=csv.QUOTE_NONE)
