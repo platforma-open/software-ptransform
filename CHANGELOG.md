@@ -1,5 +1,11 @@
 # @platforma-open/milaboratories.software-paggregate
 
+## 1.3.1
+
+### Patch Changes
+
+- 51da7b6: Fix concatenation behaviour and quotes
+
 ## 1.3.0
 
 ### Minor Changes
