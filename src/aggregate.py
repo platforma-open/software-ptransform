@@ -111,7 +111,7 @@ class AggregationMean(ColumnAggregationBase, tag="mean"):
 
 class AggregationMedian(ColumnAggregationBase, tag="median"):
     def _aggregate_column(self, grp_data: DataFrameGroupBy, data: pd.DataFrame) -> pd.Series:
-        return self._column_data(grp_data).mean()
+        return self._column_data(grp_data).median()
 
 
 class AggregationSum(ColumnAggregationBase, tag="sum"):

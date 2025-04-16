@@ -9,4 +9,3 @@ python ../main.py -w params_5.json input.tsv output_5.tsv
 python ../main.py -w params_6.json input.tsv output_6.tsv
 python ../main.py -w params_1.json input_empty.tsv output_empty_1.tsv
 python ../main.py -w params_2.json input_empty.tsv output_empty_2.tsv
-

@@ -9,6 +9,11 @@
         {
           "type": "max_by",
           "rankingCol": "v1"
+        },
+        {
+          "type": "count",
+          "src": "tt(1,2)",
+          "dst": "tt(1,2)_count"
         }
       ]
     }
