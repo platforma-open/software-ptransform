@@ -16,6 +16,6 @@ class TransformationCombineColumnsAsJson(WorkflowStepBase, tag="combine_columns_
         data_copy = data.copy(deep=False)
         src = self.src
         data_copy[self.dst] = data_copy.loc[:, src] \
-            .apply(lambda x: json.dumps([x[c] for c in src], separators=(',', ':')), axis=1)
+            .apply(lambda x: json.dumps([x[c] for c in src], separators=(',', ':'), default=str), axis=1)
         # .astype('string')
         return data_copy
