@@ -1,5 +1,12 @@
 # @platforma-open/milaboratories.software-paggregate
 
+## 1.4.0
+
+### Minor Changes
+
+- 3d9d161: add default=str to json.dumps in transform to serialize integers
+- 6d1046e: custom JSON encoder
+
 ## 1.3.1
 
 ### Patch Changes
