@@ -1,5 +1,11 @@
 # @platforma-open/milaboratories.software-paggregate
 
+## 1.4.2
+
+### Patch Changes
+
+- 344c551: bump version runenv-python-3
+
 ## 1.4.0
 
 ### Minor Changes
