@@ -15,7 +15,7 @@
   "devDependencies": {
     "@changesets/cli": "^2.27.12",
     "@platforma-sdk/package-builder": "^2.15.0",
-    "@platforma-open/milaboratories.runenv-python-3": "^1.1.13"
+    "@platforma-open/milaboratories.runenv-python-3": "^1.1.14"
   },
   "packageManager": "pnpm@9.12.0",
   "block-software": {
