@@ -1,5 +1,11 @@
 # @platforma-open/milaboratories.software-paggregate
 
+## 1.4.3
+
+### Patch Changes
+
+- 989bda3: bump run python version
+
 ## 1.4.2
 
 ### Patch Changes
