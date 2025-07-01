@@ -1,5 +1,11 @@
 # @platforma-open/milaboratories.software-paggregate
 
+## 1.5.0
+
+### Minor Changes
+
+- ada074c: bump run python version
+
 ## 1.4.3
 
 ### Patch Changes
