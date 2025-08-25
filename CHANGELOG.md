@@ -1,5 +1,11 @@
 # @platforma-open/milaboratories.software-paggregate
 
+## 1.6.0
+
+### Minor Changes
+
+- 01150a3: docker image
+
 ## 1.5.0
 
 ### Minor Changes
