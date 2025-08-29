@@ -15,8 +15,8 @@ importers:
         specifier: ^1.1.16
         version: 1.1.16
       '@platforma-sdk/package-builder':
-        specifier: ^3.0.2
-        version: 3.0.2
+        specifier: ^3.2.3
+        version: 3.2.3
 
 packages:
 
@@ -283,8 +283,8 @@ packages:
   '@platforma-open/milaboratories.runenv-python-3@1.1.16':
     resolution: {integrity: sha512-A46M7cK1uVW4itLjXX9nodZm97ETcDBDQPQpBsPmu+Wjy8wlyHxUUH/v8KvtW45gNcW+yNO0LvzqE0u4GL86Jg==}
 
-  '@platforma-sdk/package-builder@3.0.2':
-    resolution: {integrity: sha512-UV8kTksiO3fZj3C3yvUSytxh/Rvy3USgtPyWGBkLuw1RYTFu/ZN4hEtUMe4PMbDNi8VR7Pstf4mWWw5mnXjbzQ==}
+  '@platforma-sdk/package-builder@3.2.3':
+    resolution: {integrity: sha512-77svGXJneV1V1WP6OMwLb3wiX3+lCAqwW9cQfyAHbUcNYGDUnjGLQ2r8nFC/JBVtCvLbpbx/3VQKdOGRlmJWyw==}
     hasBin: true
 
   '@smithy/abort-controller@4.0.5':
@@ -1958,7 +1958,7 @@ snapshots:
 
   '@platforma-open/milaboratories.runenv-python-3@1.1.16': {}
 
-  '@platforma-sdk/package-builder@3.0.2':
+  '@platforma-sdk/package-builder@3.2.3':
     dependencies:
       '@aws-sdk/client-s3': 3.859.0
       '@aws-sdk/lib-storage': 3.859.0(@aws-sdk/client-s3@3.859.0)
