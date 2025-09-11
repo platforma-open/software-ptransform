@@ -1,5 +1,11 @@
 # @platforma-open/milaboratories.software-paggregate
 
+## 1.6.2
+
+### Patch Changes
+
+- 0d76e8d: Update package-builder to enable autopush in CI
+
 ## 1.6.1
 
 ### Patch Changes
