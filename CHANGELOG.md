@@ -1,5 +1,11 @@
 # @platforma-open/milaboratories.software-paggregate
 
+## 1.6.1
+
+### Patch Changes
+
+- 18f67fe: update dependencies
+
 ## 1.6.0
 
 ### Minor Changes
