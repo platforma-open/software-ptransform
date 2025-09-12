@@ -1,5 +1,11 @@
 # @platforma-open/milaboratories.software-paggregate
 
+## 1.6.4
+
+### Patch Changes
+
+- 5a189fb: Technical release
+
 ## 1.6.3
 
 ### Patch Changes
