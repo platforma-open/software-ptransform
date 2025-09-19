@@ -1,5 +1,11 @@
 # @platforma-open/milaboratories.software-paggregate
 
+## 1.6.5
+
+### Patch Changes
+
+- 61fb579: Bump runenv-python-3 v1.4.6 -> v1.4.12, package-builder v3.5.2 -> 3.7.0
+
 ## 1.6.4
 
 ### Patch Changes
